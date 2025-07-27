@@ -28,13 +28,13 @@ const Navbar = () => {
           />
         </div>
       </Link>
-      <div className="flex items-center gap-8">
-        <nav className="flex items-center gap-4">
+      <div className="flex items-center gap-4 sm:gap-8">
+        <nav className="flex items-center gap-4 sm:gap-8">
           {navItems.map(({ label, href }) => (
             <Link
               href={href}
               key={label}
-              className={cn(pathname === href && "text-primary font-semibold")}
+              className={cn(pathname === href && "font-semibold")}
             >
               {label}
             </Link>

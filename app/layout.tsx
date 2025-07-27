@@ -1,10 +1,10 @@
-import Navbar from "@/components/ui/Navbar";
+import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
-import { Bricolage_Grotesque } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const bricolage = Bricolage_Grotesque({
-  variable: "--font-bricolage",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
 });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${bricolage.variable} antialiased`}>
+      <body className={`${dmSans.variable} antialiased`}>
         <Navbar />
         {children}
       </body>
