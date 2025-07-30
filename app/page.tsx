@@ -1,4 +1,7 @@
+import CallToAction from "@/components/CallToAction";
 import CompanionCard from "@/components/CompanionCard";
+import CompanionList from "@/components/CompanionList";
+import { recentSessions } from "@/constants";
 
 const Page = () => {
   return (
@@ -8,6 +11,11 @@ const Page = () => {
         <CompanionCard />
         <CompanionCard />
         <CompanionCard />
+      </section>
+
+      <section className="flex flex-col md:flex-row gap-5 w-full">
+        <CompanionList recentCompanions={recentSessions} />
+        <CallToAction />
       </section>
     </main>
   );
