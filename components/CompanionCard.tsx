@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 const CompanionCard = () => {
   return (
-    <article className="rounded-2xl bg-[#FFCCCC] border-black border-2 shadow-lg p-8 flex flex-col gap-2.5">
+    <article className="rounded-4xl bg-[#FFCCCC] border-black border-2 shadow-lg p-8 flex flex-col gap-2 w-full min-w-[300px] max-w-[400px] ">
       <div className="flex items-center justify-between">
         <Badge className="p-1">Science</Badge>
         <Badge className="p-1">
@@ -18,7 +18,9 @@ const CompanionCard = () => {
         <Clock size={16} />
         45 mins duration
       </p>
-      <Button className="pointer-events-auto pointer">Launch Lesson</Button>
+      <Button className="pointer-events-auto cursor-pointer">
+        Launch Lesson
+      </Button>
     </article>
   );
 };
