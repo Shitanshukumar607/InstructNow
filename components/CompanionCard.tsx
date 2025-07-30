@@ -1,15 +1,16 @@
 import { Bookmark, Clock } from "lucide-react";
-import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 
 const CompanionCard = () => {
   return (
     <article className="rounded-4xl bg-[#FFCCCC] border-black border-2 shadow-lg p-8 flex flex-col gap-2 w-full min-w-[300px] max-w-[400px] ">
       <div className="flex items-center justify-between">
-        <Badge className="p-1">Science</Badge>
-        <Badge className="p-1">
+        <div className="bg-main flex items-center rounded-xl justify-center border-2 p-1 min-w-20">
+          Science
+        </div>
+        <div className="bg-main flex items-center rounded-xl justify-center border-2 p-1">
           <Bookmark className="size-5" />
-        </Badge>
+        </div>
       </div>
 
       <h3 className="font-bold text-2xl">Neura the Brainy Explorer</h3>
