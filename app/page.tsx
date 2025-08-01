@@ -13,7 +13,7 @@ const Page = () => {
         <CompanionCard />
       </section>
 
-      <section className="flex flex-col md:flex-row gap-5 w-full">
+      <section className="flex flex-col-reverse justify-between md:flex-row gap-5 w-full mt-7.5">
         <CompanionList recentCompanions={recentSessions} />
         <CallToAction />
       </section>

@@ -16,7 +16,7 @@ const CompanionList = ({
   recentCompanions: Companion[];
 }) => {
   return (
-    <section className="rounded-4xl mt-5 bg-[#f7e5e5] border-black border-2 shadow-lg p-4 md:p-8 flex flex-col gap-5">
+    <section className="rounded-4xl bg-[#f7e5e5] border-black border-2 shadow-lg p-4 lg:p-8 flex flex-col gap-5">
       <p className="text-xl md:text-3xl font-semibold">
         Recently completed lessons
       </p>
